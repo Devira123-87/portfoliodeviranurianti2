@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design Aplikasi AR Anatomi | Devira Nurianti</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        body{
+            margin:0;
+            font-family: 'Poppins', sans-serif;
+            background:#f7f5ff;
+            color:#1e1e1e;
+        }
+
+        .container{
+            width:90%;
+            max-width:1300px;
+            margin:auto;
+        }
+
+        /* HEADER */
+
+        .site-header{
+            background:#fff;
+            padding:20px 0;
+            border-bottom:1px solid #eee;
+        }
+
+        .header-inner{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .brand-title{
+            font-size:28px;
+            font-weight:700;
+        }
+
+        .brand-subtitle{
+            color:#666;
+            font-size:15px;
+        }
+
+        .site-nav{
+            display:flex;
+            gap:30px;
+        }
+
+        .site-nav a{
+            text-decoration:none;
+            color:#444;
+            font-weight:500;
+        }
+
+        .site-nav a.active{
+            color:#6c4df6;
+        }
+
+        /* HERO */
+
+        .project-hero{
+            padding:80px 0;
+        }
+
+        .project-hero-grid{
+            display:grid;
+            grid-template-columns:0.9fr 1.1fr;
+            gap:50px;
+            align-items:center;
+        }
+
+        .project-badge{
+            display:inline-block;
+            padding:10px 20px;
+            border-radius:50px;
+            background:#e8ddff;
+            color:#6c4df6;
+            font-weight:600;
+            margin-bottom:25px;
+        }
+
+        .project-hero h1{
+            font-size:64px;
+            line-height:1.1;
+            margin-bottom:25px;
+        }
+
+        .project-lead{
+            color:#555;
+            line-height:1.9;
+            font-size:18px;
+        }
+
+        .hero-actions{
+            margin-top:35px;
+            display:flex;
+            gap:20px;
+        }
+
+        .button{
+            padding:16px 28px;
+            border-radius:14px;
+            text-decoration:none;
+            font-weight:600;
+            transition:.3s;
+        }
+
+        .button.primary{
+            background:#6c4df6;
+            color:#fff;
+        }
+
+        .button.secondary{
+            background:#fff;
+            color:#222;
+            border:1px solid #ddd;
+        }
+
+        .button:hover{
+            transform:translateY(-3px);
+        }
+
+        /* IMAGE PANEL */
+
+        .project-preview-panel{
+            background:#efebff;
+            padding:28px;
+            border-radius:35px;
+            box-shadow:0 12px 34px rgba(0,0,0,0.08);
+        }
+
+        .project-preview-slider{
+            display:flex;
+            gap:18px;
+            overflow-x:auto;
+            padding-bottom:8px;
+            scroll-snap-type:x mandatory;
+            -webkit-overflow-scrolling:touch;
+        }
+
+        .slide-card{
+            min-width:280px;
+            flex:0 0 auto;
+            border-radius:28px;
+            overflow:hidden;
+            background:#fff;
+            box-shadow:0 18px 40px rgba(15,23,42,0.06);
+            scroll-snap-align:center;
+        }
+
+        .slide-card img{
+            width:100%;
+            height:520px;
+            object-fit:cover;
+            display:block;
+        }
+
+        .project-image-caption{
+            margin-top:18px;
+            color:#555;
+            font-size:0.95rem;
+            text-align:right;
+            font-weight:600;
+        }
+
+        /* DETAIL */
+
+        .project-section{
+            padding:60px 0 100px;
+        }
+
+        .project-info-grid{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:30px;
+        }
+
+        .project-text,
+        .project-feature-card{
+            background:#fff;
+            padding:35px;
+            border-radius:25px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .project-text h2,
+        .project-feature-card h3{
+            margin-top:0;
+            color:#6c4df6;
+        }
+
+        .project-text p{
+            line-height:1.9;
+            color:#555;
+        }
+
+        .project-feature-card ul{
+            padding-left:20px;
+            line-height:2;
+            color:#555;
+        }
+
+        .project-list{
+            display:flex;
+            flex-direction:column;
+            gap:25px;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:992px){
+
+            .project-hero-grid,
+            .project-info-grid{
+                grid-template-columns:1fr;
+            }
+
+            .project-hero h1{
+                font-size:42px;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <div class="brand">
+            <div class="brand-title">Devira Nurianti</div>
+            <div class="brand-subtitle">UI/UX Designer</div>
+        </div>
+
+        <nav class="site-nav">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#portfolio" class="active">Portofolio</a>
+            <a href="index.html#contact">Kontak</a>
+        </nav>
+
+    </div>
+
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="project-hero">
+
+        <div class="container project-hero-grid">
+
+            <div>
+
+                <div class="project-badge">
+                    UI/UX Design Project
+                </div>
+
+                <h1>
+                    UI/UX Aplikasi AR Anatomi
+                </h1>
+
+                <p class="project-lead">
+                    Perancangan tampilan antarmuka aplikasi AR Anatomi
+                    untuk media pembelajaran interaktif mengenai kerangka manusia
+                    dan organ tubuh. Desain dibuat dengan fokus pada pengalaman
+                    pengguna modern, navigasi mudah dipahami, serta visual edukatif
+                    yang menarik menggunakan Figma.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="index.html#portfolio" class="button secondary">
+                        ← Kembali ke Portofolio
+                    </a>
+
+                    <a href="#details" class="button primary">
+                        Detail Proyek
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGE -->
+            <div class="project-preview-panel">
+                <div class="project-preview-slider">
+                    <div class="slide-card">
+                        <img src="images/rangka.png" alt="Slide 1" />
+                    </div>
+                
+                </div>
+                <div class="project-image-caption"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- DETAIL -->
+    <section id="details" class="project-section">
+
+        <div class="container">
+
+            <div class="project-info-grid">
+
+                <div class="project-text">
+
+                    <h2>Ringkasan Proyek</h2>
+
+                    <p>
+                        Proyek ini merupakan desain UI/UX aplikasi mobile edukasi
+                        berbasis Augmented Reality (AR) yang membantu pengguna
+                        mempelajari anatomi tubuh manusia secara interaktif.
+                        Desain mencakup onboarding, scan AR, halaman informasi organ,
+                        navigasi menu, dan evaluasi pengguna dengan tampilan modern
+                        dan user friendly.
+                    </p>
+
+                </div>
+
+                <div class="project-list">
+
+                    <div class="project-feature-card">
+
+                        <h3>Fitur Desain</h3>
+
+                        <ul>
+                            <li>Tampilan mobile modern dan clean</li>
+                            <li>Desain interaktif berbasis AR</li>
+                            <li>Informasi organ tubuh edukatif</li>
+                            <li>Navigasi pengguna intuitif</li>
+                            <li>Visual learning experience</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="project-feature-card">
+
+                        <h3>Tools yang Digunakan</h3>
+
+                        <p>
+                            Figma, UI Design, UX Research, Wireframe,
+                            Prototyping, Design System, Mobile Interface Design.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>
